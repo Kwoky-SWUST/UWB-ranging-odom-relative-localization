@@ -1,0 +1,19 @@
+
+<launch>
+
+    <param name="use_sim_time" value="true" />
+
+    <node pkg="tf" type="static_transform_publisher" name="karto_tf" args="0.0 0.0 0.0 0 0 0.0 robot1/map robot1/odom 1000"/>
+  
+    <node name="karto_submap_node" pkg="karto_submap" type="karto_submap_node" output="screen" >
+        <rosparam command="load" file="$(find karto_submap)/config/mapper_params.yaml" />
+        <remap from="scan" to="laser_scan" />
+    </node>
+
+    <!-- launch rviz -->
+    <node name="rviz" pkg="rviz" type="rviz" required="true"
+        args="-d $(find karto_submap)/config/karto_submap.rviz" />
+
+
+
+</launch>

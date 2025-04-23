@@ -1,0 +1,4 @@
+<launch>
+	<node name="rviz1" pkg="rviz" type="rviz" args="-d $(find multi_robots_rviz)/config/robot1.rviz"/>
+	<node name="rviz2" pkg="rviz" type="rviz" args="-d $(find multi_robots_rviz)/config/robot2.rviz"/>
+</launch>

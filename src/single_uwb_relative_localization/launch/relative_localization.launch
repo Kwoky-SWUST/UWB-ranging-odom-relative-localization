@@ -1,0 +1,7 @@
+<launch>
+
+ <node name="relative_localization_node" pkg="single_uwb_relative_localization" type="relative_localization_node" output="screen">
+    <param name="configure" value="$(find single_uwb_relative_localization)/configure/configure_three_robots.yaml" />
+ </node>
+ <!--node name="ground_trues_node" pkg="ground_trues" type="ground_trues_node" output="screen"/-->
+</launch>

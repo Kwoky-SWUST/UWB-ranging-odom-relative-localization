@@ -1,0 +1,22 @@
+#drone droneID attached_tag_id x y z (relative position)
+#human humanID attached_tag_id x y z (relative position)
+#CAO
+# robot1 1  -0.25 0.25 0
+# robot2 5  -0.25 0.25 0
+# robot3 9  -0.25 0.25 0
+#DZY
+robot1 0  0 0 0
+robot2 1  0 0 0
+robot3 2  0 0 0
+
+#robot1 uwb pose
+
+#robot1 1  0 0 0
+
+#robot2 uwb pose
+
+#robot2 2  0 0 0
+
+#robot3 uwb pose
+
+#robot3 2 0 0 0

@@ -1,0 +1,8 @@
+<launch> 
+    
+    <node pkg="multi_robots_formation" type="multi_robots_formation_node" name="multi_robots_formation_node" output="screen"/>
+     
+    <!-- launch rviz -->
+    <!-- <node name="rviz" pkg="rviz" type="rviz" required="true"
+        args="-d $(find multi_robots_formation)/config/navigation.rviz" /> -->
+</launch>
