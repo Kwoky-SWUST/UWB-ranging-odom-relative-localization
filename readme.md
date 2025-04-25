@@ -71,39 +71,3 @@ Before you begin, ensure you have the following installed:
 *   **Potential for Multi-Robot Systems:** The directory structure suggests support for multi-robot applications.
 *   **Sensor Integration:** Includes directories for `hokuyo_node` and `rplidar_ros`, indicating support for laser scanners.
 
-## API Documentation
-
-Detailed API documentation is not available in this README.  Refer to the source code comments within the `src` directory for information on specific functions and classes.  Pay close attention to the following directories:
-
-*   `src/single_uwb_relative_localization`:  Likely contains the core logic for UWB-based relative localization.
-*   `src/filters`: May contain filtering algorithms (e.g., Kalman filters) used to improve localization accuracy.
-*   `src/multi_robots_formation`, `src/multi_robots_navgation`:  If you are working with multiple robots, these directories will be relevant.
-
-## Contribution Guidelines
-
-Contributions are welcome!  To contribute to this project, please follow these steps:
-
-1.  **Fork the repository.**
-2.  **Create a new branch for your feature or bug fix.**
-3.  **Make your changes and commit them with clear, descriptive commit messages.**
-4.  **Submit a pull request.**
-
-Please ensure that your code adheres to the following guidelines:
-
-*   **Code Style:** Follow the existing code style.
-*   **Comments:**  Add comments to explain your code.
-*   **Testing:**  If possible, add tests to verify your changes.
-
-## Troubleshooting
-
-*   **Compilation Errors:**  Ensure that all required ROS packages are installed and that your ROS environment is properly sourced.
-*   **UWB Data Issues:**  Verify that your UWB hardware is properly configured and that you are receiving valid ranging data.  Check the ROS topics being published by your UWB driver.
-*   **Localization Accuracy:**  Localization accuracy can be affected by factors such as UWB ranging errors, odometry drift, and environmental conditions.  Consider using filtering techniques (e.g., Kalman filters) to improve accuracy.  Calibrate your sensors carefully.
-*   **Multi-Robot Communication:** If using the multi-robot features, ensure that the robots can communicate with each other over the ROS network.
-
-## Additional Resources
-
-*   [ROS Wiki](http://wiki.ros.org/)
-*   Documentation for your specific UWB hardware.
-*   Documentation for your odometry source (e.g., wheel encoders, IMU).
-```
